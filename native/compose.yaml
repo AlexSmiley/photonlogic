@@ -1,0 +1,9 @@
+services:
+  solver:
+    build: .
+    image: photonlogic-fvm622:local
+    working_dir: /work
+    volumes:
+      - .:/work
+    mem_limit: 12g
+    cpus: 4
